@@ -1,0 +1,39 @@
+// resolutions
+
+$phones: 1190px;
+//$tablets: 960px;
+//$desktop: 1920px;
+
+/* @mixin desktop {
+	@media screen and (max-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin tablets {
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+} */
+
+@mixin phones {
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+/* html {
+	@include desktop {
+		font-size: rem(15px);
+    }
+    @include tablets {
+		font-size: rem(14px);
+    }
+    @include phones {
+		font-size: rem(13px);
+    }
+}
+
+@function rem($px) {
+    @return $px / 16px + 0rem;
+} */

@@ -1,0 +1,135 @@
+.price__right {
+    @include phones {
+        display: none;
+    }
+
+    &__table {
+        padding-top: 33px;
+        margin-bottom: 10px;
+        display: none;
+
+        &-1 {
+            display: block;
+        }
+
+        &__row {
+            padding-left: 30px;
+            padding-top: 15px;
+            padding-bottom: 18px;
+
+            &__description {
+                font-family: segoe;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 21px;
+                color: #000000;
+                display: flex;
+
+                & span {
+                    &:first-child {
+                        width: 404px;
+                    }
+                    &:nth-child(2) {
+                        width: 95px;
+                        margin-left: 38px;
+                    }
+                    &:last-child {
+                        margin-left: 147px;
+                    }
+                }
+            }
+
+            &__link {
+                display: flex;
+                font-family: segoe;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 21px;
+                color: #4D4D4D;
+                &:hover {
+                    color: #6699FF;
+                }
+
+                & span {
+                    &:first-child {
+                        width: 404px;
+                    }
+                    &:nth-child(2) {
+                        width: 95px;
+                        margin-left: 38px;
+                    }
+                    &:last-child {
+                        margin-left: 147px;
+                    }
+                }
+            }
+
+            &__content {
+                
+                &:nth-child(odd) {
+                    background-color: #F2F2F2;
+                }
+                &:nth-child(even) {
+                    background-color: #F9F9F9;
+                }
+            }
+        }
+    }
+
+    &__description {
+        margin-bottom: 60px;
+        &__text {
+            font-family: segoe;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            color: #7B7A7A;
+        }
+    }
+    &__vantages {
+        padding-left: 10px;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            max-width: 275px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5 0C7 0 0 7 0 15.5C0 24 7 31 15.5 31C24 31 31 24 31 15.5C31 7 24 0 15.5 0ZM15.5 29.8C7.6 29.8 1.2 23.4 1.2 15.5C1.2 7.6 7.6 1.2 15.5 1.2C23.4 1.2 29.8 7.6 29.8 15.5C29.8 23.4 23.4 29.8 15.5 29.8Z' fill='black'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.8 9.09995L13.6 19.4L8.10003 15C7.80003 14.8 7.50003 14.8 7.30003 15.1C7.10003 15.4 7.10003 15.7 7.40003 15.9L13.4 20.7C13.5 20.8 13.6 20.7999 13.8 20.7999C14 20.7999 14.1 20.7 14.2 20.6L23.7 9.89995C23.9 9.69995 23.9 9.29995 23.7 9.09995C23.4 8.89995 23 8.89995 22.8 9.09995Z' fill='black'/%3e%3c/svg%3e ");
+                width: 31px;
+                height: 31px;
+                bottom: 105%;
+            }
+        }
+
+        &__desc {
+            font-family: segoe;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            margin-bottom: 10px;
+            color: #4D4D4D;
+        }
+
+        &__text {
+            font-family: Segoe UI;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px;
+            color: #7B7A7A;
+        }
+    }
+}

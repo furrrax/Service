@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: rem(16px);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    background-color: #E5E5E5;
+    position: relative;
+}
+
+input {
+    outline: none;
+    border: none;
+}
