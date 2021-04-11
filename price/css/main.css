@@ -303,21 +303,29 @@ template {
 [hidden] {
   display: none; }
 
+/* @font-face {
+    font-family: 'segoe';
+    src: url('../fonts/segoe.woff2') format('woff2'),
+        url('../fonts/segoe.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 @font-face {
-  font-family: 'segoe';
-  src: url("../fonts/segoe.woff2") format("woff2"), url("../fonts/segoe.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
+    font-family: 'segoe';
+    src: url('../fonts/segoe-ui-semibold-600.woff2') format('woff2'),
+        url('../fonts/segoe-ui-semibold-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
 @font-face {
-  font-family: 'segoe';
-  src: url("../fonts/segoe-ui-semibold-600.woff2") format("woff2"), url("../fonts/segoe-ui-semibold-600.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'segoe';
-  src: url("../fonts/segoe-ui-bold-700.woff2") format("woff2"), url("../fonts/segoe-ui-bold-700.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
+    font-family: 'segoe';
+    src: url('../fonts/segoe-ui-bold-700.woff2') format('woff2'),
+        url('../fonts/segoe-ui-bold-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+} */
 * {
   box-sizing: border-box; }
 
@@ -329,7 +337,7 @@ html, body {
 
 body {
   margin: 0px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   color: #000;
   -webkit-font-smoothing: antialiased;
@@ -358,32 +366,6 @@ input {
   outline: none;
   border: none; }
 
-/* @mixin desktop {
-	@media screen and (max-width: $desktop) {
-		@content;
-	}
-}
-
-@mixin tablets {
-	@media screen and (max-width: $tablets) {
-		@content;
-	}
-} */
-/* html {
-	@include desktop {
-		font-size: rem(15px);
-    }
-    @include tablets {
-		font-size: rem(14px);
-    }
-    @include phones {
-		font-size: rem(13px);
-    }
-}
-
-@function rem($px) {
-    @return $px / 16px + 0rem;
-} */
 .slider {
   width: 100%;
   display: flex;
@@ -439,7 +421,7 @@ input {
     white-space: nowrap;
     outline: none; }
   .slider__text {
-    font-family: segoe;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -515,7 +497,7 @@ input {
           .price__left__item--active > .price__left__link {
             border-bottom: unset; } }
         .price__left__item--active > .price__left__link > .price__left__link-text {
-          font-family: segoe;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 700;
@@ -533,7 +515,7 @@ input {
         align-items: center;
         padding-left: 20px; } }
     .price__left__link-text {
-      font-family: segoe;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -554,7 +536,7 @@ input {
         height: 31px;
         fill: #ffffff; }
       .price__left__desc-text {
-        font-family: segoe;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -573,7 +555,7 @@ input {
       .price__left__download-link {
         margin-bottom: 5px; }
       .price__left__download-text {
-        font-family: segoe;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-size: 15px;
         font-style: normal;
         font-weight: bold;
@@ -582,7 +564,7 @@ input {
         border-bottom: 1px dashed #ffffff;
         text-transform: uppercase; }
       .price__left__download-date {
-        font-family: segoe;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -620,7 +602,7 @@ input {
             color: #b8b8b8; }
       .price__left__expand__link {
         width: 100%;
-        font-family: segoe;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -645,7 +627,7 @@ input {
     padding-top: 15px;
     padding-bottom: 18px; }
     .price__right__table__row__description {
-      font-family: segoe;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -661,7 +643,7 @@ input {
         margin-left: 147px; }
     .price__right__table__row__link {
       display: flex;
-      font-family: segoe;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -683,7 +665,7 @@ input {
 .price__right__description {
   margin-bottom: 60px; }
   .price__right__description__text {
-    font-family: segoe;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -707,7 +689,7 @@ input {
       height: 31px;
       bottom: 105%; }
   .price__right__vantages__desc {
-    font-family: segoe;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -715,7 +697,7 @@ input {
     margin-bottom: 10px;
     color: #4D4D4D; }
   .price__right__vantages__text {
-    font-family: Segoe UI;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

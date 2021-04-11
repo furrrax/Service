@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'segoe';
     src: url('../fonts/segoe.woff2') format('woff2'),
         url('../fonts/segoe.woff') format('woff');
@@ -20,4 +20,5 @@
         url('../fonts/segoe-ui-bold-700.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-}
+} */
+$font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
